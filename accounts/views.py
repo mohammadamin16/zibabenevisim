@@ -20,24 +20,24 @@ class Login(LoginView):
     def form_valid(self, form):
         return super().form_valid(form)
 
-#
-# class Logout(LogoutView):
-#     def get_next_page(self):
-#         return reverse('home')
-#
-#
-# class SignUp(FormView):
-#     form_class = SignUpForm
-#     fields = ['email', 'username', 'password', 'display_name']
-#     template_name = 'accounts/signup.html'
-#
-#     def form_valid(self, form):
-#         form.save_user()
-#         return super(SignUp, self).form_valid(form)
-#
-#     def get_success_url(self):
-#         return reverse('accounts:login')
-#
+
+class Logout(LogoutView):
+    def get_next_page(self):
+        return reverse('home-page')
+
+
+class SignUp(FormView):
+    form_class = SignUpForm
+    fields = ['phone', 'username', 'password', 'display_name']
+    template_name = 'accounts/signup.html'
+
+    def form_valid(self, form):
+        form.save_user()
+        return super(SignUp, self).form_valid(form)
+
+    def get_success_url(self):
+        return reverse('accounts:login')
+
 #
 # class Profile(DetailView):
 #     model = get_user_model()
