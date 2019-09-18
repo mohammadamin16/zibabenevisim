@@ -1,0 +1,12 @@
+{% extends 'accounts/accounts_base_template.html' %}
+{% load bootstrap %}
+{% block content %}
+<div class="container mt-5">
+    <p class="h1 text-center">Login :</p>
+    <form  method="post">
+        {{ form|bootstrap_horizontal}}
+        {% csrf_token %}
+        <input class="btn btn-primary" type="submit" value="Login">
+</form>
+</div>
+{% endblock %}
