@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'BBadr';
+  src: url('fonts/BBadr.eot?#') format('eot'),
+       url('fonts/BBadr.woff') format('woff'),
+       url('fonts/BBadr.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BBaran';
+  src: url('fonts/BBaran.eot?#') format('eot'),
+       url('fonts/BBaran.woff') format('woff'),
+       url('fonts/BBaran.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BNazanin';
+  src: url('fonts/BNazanin.eot?#') format('eot'),
+       url('fonts/BNazanin.woff') format('woff'),
+       url('fonts/BNazanin.ttf') format('truetype');
+}
