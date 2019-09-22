@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block titile %}
+    {{ book.title }} | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center mt-5 rounded ml-5" style="background-color: rgba(59,185,0,0.25);border-radius:.25rem!important">
+                <img class="p-3" src="{{ book.pic.url }}" alt="pic of the book" width="350">
+            </div>
+            <div class="col text-left mt-5 mr-5 p-5" style="background-color: rgba(0,185,158,0.25)">
+                Title: {{ book.title }}
+                <br>
+                Description: {{ book.description }}
+                <br>
+                <a href="#" class="btn btn-primary">Order</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
