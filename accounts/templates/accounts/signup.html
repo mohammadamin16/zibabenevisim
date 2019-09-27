@@ -2,12 +2,12 @@
 {% load bootstrap %}
 {% block content %}
     <div class="container mt-5">
-    <p class="h1 text-center">Signup :</p>
+    <p class="h1 text-center">ثبت نام</p>
 
 <form  method="post">
     {{ form|bootstrap }}
     {% csrf_token %}
-    <input class="btn btn-primary" type="submit" value="Sign Up">
+    <input class="btn btn-primary" type="submit" value="تایید">
 </form>
 </div>
 {% endblock %}

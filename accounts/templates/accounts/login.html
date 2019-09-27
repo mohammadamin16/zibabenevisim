@@ -2,11 +2,11 @@
 {% load bootstrap %}
 {% block content %}
 <div class="container mt-5">
-    <p class="h1 text-center">Login :</p>
+    <p class="h1 text-center">ورود</p>
     <form  method="post">
         {{ form|bootstrap_horizontal}}
         {% csrf_token %}
-        <input class="btn btn-primary" type="submit" value="Login">
+        <input class="btn btn-primary" type="submit" value="ورود">
 </form>
 </div>
 {% endblock %}

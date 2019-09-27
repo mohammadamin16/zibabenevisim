@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth import get_user_model
+from django.contrib.auth.forms import AuthenticationForm
 from kavenegar import *
 
 
@@ -8,6 +9,10 @@ class SignUpForm(forms.Form):
     display_name = forms.CharField(max_length=140)
     phone = forms.CharField(max_length=12)
     password = forms.CharField(widget=forms.PasswordInput())
+    username.label = 'نام کاربری'
+    display_name.label = 'نامی که نمایش داده میشود'
+    phone.label = 'موبایل'
+    password.label = 'رمز عبور'
 
     def save_user(self):
         get_user_model().objects.create_user(

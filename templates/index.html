@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container-fluid m-0">
 
     <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -42,19 +42,22 @@
     <div class="row">
       <div class="col ">
             <img src="{% static 'img/Dovvom.jpg' %}" width="140" height="140" class="rounded-circle" >
-        <h2>دوم ابتدایی</h2>
+        <hr class="w-75" color="#808080">
+          <h2>دوم ابتدایی</h2>
         <p>توضیحات درباره کتاب</p>
         <p><a class="btn btn-primary" href="{% url 'books:book-view' 2 %}" role="button">بیشتر</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col ">
             <img src="{% static 'img/Sevvom.jpg' %}" width="140" height="140" class="rounded-circle" >
-        <h2>سوم ابتدایی</h2>
+        <hr class="w-75" color="#808080">
+          <h2>سوم ابتدایی</h2>
         <p>توضیحات درباره کتاب</p>
         <p><a class="btn btn-primary" href="{% url 'books:book-view' 3%}" role="button">بیشتر</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col ">
             <img src="{% static 'img/Chaharom.jpg' %}" width="140" height="140" class="rounded-circle" >
-        <h2>چهارم ابتدایی</h2>
+        <hr class="w-75" color="#808080">
+          <h2>چهارم ابتدایی</h2>
         <p>توضیحات درباره کتاب</p>
         <p><a class="btn btn-primary" href="{% url 'books:book-view' 4 %}" role="button">بیشتر</a></p>
       </div><!-- /.col-lg-4 -->
